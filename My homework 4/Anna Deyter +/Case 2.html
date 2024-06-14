@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Case 2</title>
+	</head>
+	<body>
+	<script>
+		"use strict";
+		
+		/*2. Используя арифметические операции (+,-,*,/,%) для чисел, вычислить сумму и произведение 
+		цифр введенного пользователем четырехзначного числа.*/
+		
+		let a = prompt("Введите четырёхзначное число");
+		let b;
+		let c;
+		let d;
+		let e;
+
+		b = a % 10;
+		a = a / 10;
+		c = a % 10;
+		a = a / 10;
+		d = a % 10;
+		a = a / 10;
+		e = a % 10;
+
+		console.log("Сумма цифр числа:", Math.floor(b) + Math.floor(c) + Math.floor(d) + Math.floor(e));
+		console.log("Произведение цифр числа:", Math.floor(b) * Math.floor(c) * Math.floor(d) * Math.floor(e));
+	</script>
+	</body>
+</html>

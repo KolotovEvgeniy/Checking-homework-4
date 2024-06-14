@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Case 4</title>
+    </head>
+    <body>
+    <script>
+        "use strict";
+
+        /*4. В квадратной комнате шириной w и высотой потолка h есть дверь и несколько одинаковых окон. Вычислить 
+        площадь стен для оклеивания их обоями. Размеры комнаты (w и h), размеры двери и окна, а также количество 
+        окон вводятся пользователем.*/
+
+        const pWindow = 2;
+        const pDoor = 2;
+        
+        let w = prompt("Введите ширину комнаты");
+        let h = prompt("Введите высоту комнаты");
+        let quantWindow = prompt("Введите количество окон");
+        let pWallPaper = w * h * 4 - pWindow * quantWindow - pDoor;
+
+        console.log(pWallPaper);
+    </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Case 1</title>
+    </head>
+    <body>
+    <script>
+        "use strict";
+
+        /*1. 1. Из бруска, форма которого представляет собой прямую призму с квадратным основанием, выточили цилиндр. 
+        Вычислить, какой объем материала ушел в расход. Длину стороны квадрата и высоту призмы вводит пользователь.
+        V = πr²h
+        где:
+        V — объём цилиндра,
+        r — радиус основания цилиндра,
+        h — высота цилиндра*/
+
+        const PI = 3.14;
+        
+        let sideSquare = prompt("Введите длину стороны квадрата");
+        let hPrism = prompt("Введите высоту призмы");
+        let R = sideSquare / 2;
+        let vCylinder = PI * R**2 * hPrism;
+        let material = sideSquare**2 * hPrism - vCylinder;
+
+        console.log("Объём материала, который ушёл в расход:", material);
+    </script>
+    </body>
+</html>
